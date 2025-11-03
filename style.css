@@ -1,0 +1,49 @@
+* {
+    font-family: Arial;
+    font-size: 18px;
+}
+
+body {
+    background-color: #002244;
+    color: #c4c4ff;
+}
+
+input {
+    width: 84px;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #002394;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #230094;
+}
+
+#table { /* Move table so its aligned */
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+.error {
+    color: #ffc4c4;
+}
+
+/* https://www.w3schools.com/css/css_link.asp -- Since I choose probably the only colour to make a visited link unreadable */
+a {
+    color: #c4c4ff;
+}
+
+a:visited {
+    color: #d275eb;
+}
+
+#modifiers {
+    margin-top: -14px;
+    margin-bottom: 10px;
+}

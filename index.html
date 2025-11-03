@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osu! Beatmap Suggestion</title>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+        <fieldset>
+            <legend>Osu! Beatmap Recommender</legend>
+            <div>
+                <label for="topPlay">Your top play (in Performance Points)</label>
+                <input type="number" id="topPlay"/>
+                <span id="topPlayError" class="error"></span>
+            </div>
+            <div>
+                <label for="skillSet">The skillset you are comfortable with</label>
+                <select name="skillSet">
+                    <option value="">---Skillset---</option>
+                    <option value="aim">Aim</option>
+                    <option value="speed">Speed</option>
+                    <option value="stamina">Stamina</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="consistency">Consistency</option>
+                </select>
+                <span id="skillSetError" class="error"></span>
+            </div>
+            <div>
+                <p>Select The Modifiers You Want:</p>
+                <div id="modifiers">
+                    <label for="hidden">Hidden</label>
+                    <input type="checkbox" name="hidden" value="HD">
+                    <label for="hardrock">Hardrock</label>
+                    <input type="checkbox" name="hardrock" value="HR">
+                    <label for="doubletime">Doubletime</label>
+                    <input type="checkbox" name="doubletime" value="DT">
+                </div>
+            </div>
+        <button type="submit" id="submitButton">Submit</button>
+        <span id="submissionError" class="error"></span>
+        </fieldset>
+    </form>
+
+    <div id="table"></div>
+</body>
+</html>
