@@ -22,9 +22,9 @@ class Recommendation {
         else if (playerData.skillSet === "speed")
             recommendations = this.processRecommendations(beatMaps.speedMaps, playerData.recommendedDiff, playerData.modifiers);
         else if (playerData.skillSet === "stamina")
-            recommendations = this.processRecommendations(beatMaps.staminaMaps, osuOplayerDatabj.recommendedDiff, playerData.modifiers);
+            recommendations = this.processRecommendations(beatMaps.staminaMaps, playerData.recommendedDiff, playerData.modifiers);
         else if (playerData.skillSet === "hybrid")
-            playerData = this.processRecommendations(beatMaps.hybridMaps, playerData.recommendedDiff, playerData.modifiers);
+            recommendations = this.processRecommendations(beatMaps.hybridMaps, playerData.recommendedDiff, playerData.modifiers);
         else if (playerData.skillSet === "consistency")
             recommendations = this.processRecommendations(beatMaps.consistencyMaps, playerData.recommendedDiff, playerData.modifiers);
     
